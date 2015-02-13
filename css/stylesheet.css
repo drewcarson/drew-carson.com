@@ -1,0 +1,314 @@
+/**
+* CSS
+* 
+* @version 1.0
+* @author Vaska 
+* @author Gregory Cadarhttp://cluster003.ovh.net/net2ftp/index.php
+*/ 
+
+/*** GENERAL ***/
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    font-size: 10px;
+    text-decoration: none;
+    font-family: arial, sans serif;/* choisir la font ici par ex :  www.typetester.org */
+    color: #000000; /* couleur par d�faut du texte */
+    background: #fff;
+}
+
+
+
+body.section-1 { }
+body.section-2 { }
+body.section-3 { }
+
+
+/*** LINKS ***/ 
+
+/* colors for all links */
+
+a
+{
+    text-decoration: none; /* none = no underline, other options include line-through or overline */
+    color: #000000; /* sets hex color of every link - www.colorpicker.com or photoshop to find hex values */
+    background: #fff;
+}
+
+a:link /* lien normal non cliqu�*/
+{
+    text-decoration: none; /* none = no underline, other options include line-through or overline */
+    color: #000000; /* sets hex color of every link - www.colorpicker.com or photoshop to find hex values */
+    background: #fff;
+}
+    
+a:active /* quand l'utilisateur clique */
+{
+    text-decoration: bold;
+    color: #000000;
+}
+
+a:visited  /* highlights links that you have already clicked. This can be helpful for users to identify which items they have already seen*/
+{ 
+    text-decoration: none;
+    color: #000000; /* the color can also be changed */
+    background: #ffffff; /* this changes the background of a visited link, you can also get rid of the the back ground an color and there will be no change if a link has been visited */ 
+}
+    
+a:hover /* sets the properties for links when mouse rolls over */
+{ 
+    text-decoration: none;
+    font-weight: none;
+    color: #000000;
+    background: #0efdef;
+}
+
+a img /* any img that is a link */
+{ 
+    border: none; 
+}
+
+/*** PRE NAV TEXT - Can be accessed in the Exhibit Settings ***/
+#pre-nav /*for your pre-nav content*/
+{
+    margin-top : 26px;
+    padding-left : 40px;
+} 
+
+a.pre-nav
+{
+    text-decoration: none;
+    font-weight: none;
+    font-size: 25px; 
+    font-family: Arial; 
+    color: #213d35;
+    /*color: #016c33;*/
+    /*color:#000000;*/
+    background: none;
+} 
+
+a.pre-nav:hover
+{
+    text-decoration: none;
+    font-weight: none;
+    font-size: 25px; 
+    font-family: Arial;
+    color: #213d35; 
+    /*color: #016c33;*/
+    /*color:#000000;*/
+    background: none;
+} 
+
+a.thumb-img:hover
+{
+    background: none;
+}
+
+/*** MENU ***/
+
+#menu 
+{
+    width: 210px;/* sets the width of your left hand bar - if you change this also change the LEFT margin in #content to match */
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+    left: 20;
+    position: fixed; /* this make the menu stay in place while the content section scrolls*/
+    /*height: 100%;*/
+    background-color: 'transparent';/*#fff;*/
+    padding-top: 0px; /* change to match the padding-top in #content if you want them to align */
+    padding-bottom: 25px;
+    padding-right: 0px;
+    /*padding-left: 40px;*/
+    /* padding-left & right can be changed in #menu ul - below */
+    font-size: 10px;
+    z-index:100;
+    /* //for IE 
+    filter:alpha(opacity=85);
+    // CSS3 standard
+    opacity:0.85;*/
+}
+
+/* section control*/
+#menu ul 
+{
+    list-style: none;
+    margin-top: 0px; /* sets the space between each section */
+    margin-bottom: 8px; /* sets the space between each section */
+    margin-right: 0px;
+    margin-left: 0px;
+    /* sets the spacing around the menu - this is normally set to match padding options in #content but can be changed seperately */
+    padding-right: 5px;
+    /*padding-left: 5px;            */
+}
+
+#menu ul li 
+{
+    padding-bottom: 1px;
+    /*margin-top: -5px;*/
+    /*margin-bottom: -5px;*/
+    /*border-bottom: dotted thin #ffffff;*/
+}
+
+/* style for the section heading */
+#menu ul li.section-title
+{
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 10px;
+    color: #000000;
+    padding-top: 35px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    /*** Following lines adds a line about each section ***/
+    /*border-bottom-color: #cccccc; 
+    border-bottom-style: solid; 
+    border-bottom-width: 1px;*/ 
+}
+a.section-title:hover
+{
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 10px;
+    color: #000000;
+    background: #fff;
+} 
+a.section-title
+{
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 10px;
+    color: #000000;
+    background: #fff;
+} 
+
+/*** CONTENT ***/
+
+#content
+{
+    text-align: justify; 
+    line-height: 14px;
+    font-size: 10px;
+    /*height: 100%;*/
+    /* margin-top: -2px;*/
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 210px; /* sets the space so the content starts right when the menu ends - if you change this also change the width of #menu to match */
+    top: 0;
+    padding-top: 90px; /* change to match the padding-top in #menu if you want them to align */
+    padding-right: 5px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    background-color: 'transparent';
+}
+
+.vimeo
+{
+    margin-right:80px;
+}
+
+.container
+{
+    margin-bottom: 25px;
+}
+
+#content p 
+{ 
+    /* properties for all paragraphs in CONTENT */
+    width: 400px;
+    font-family: Arial;
+    font-size: 11px; 
+    margin-top: 0px;
+    margin-right: 50px;
+    /*margin-bottom: -20px; /* sets the space between paragraphs */
+    margin-left: 0px;
+    text-align: justify;    
+}          
+ 
+p 
+{
+    margin: 0 0 0px 0;
+}
+
+/*** random background ***/
+
+
+#the-background 
+{
+position: fixed;
+overflow: hidden;
+z-index:1;
+width: 100%;
+height:100%;
+top:0;
+left:0;
+}
+
+#wrapper 
+{
+position: absolute;
+z-index: 2;
+width: 100%;
+height: 100%;
+top: 0;
+left:0;
+}   
+
+/*** HEADINGS ***/
+
+h1 
+{
+    font-size: 15px; 
+    /*color:  #016c33;*/   
+    font-family: Arial; 
+    margin-top : 20;
+    margin-bottom : 20;
+}
+
+h2 
+{
+    font-size: 20px;
+}
+
+h3
+{
+    font-size: 15px;
+}
+
+h4 
+{
+    font-size: 20px;
+    font-family: Arial;
+}
+
+
+/*<DIV id=title1 Class=titles>IN PROGRESS</div>*/
+
+/*** IMAGES ***/
+
+#img-container
+{ 
+    margin: 0;
+    padding: 0;
+}
+
+#img-container p    
+{
+    width: 400px;
+    margin: 0;
+    padding: 0 0 0px 0;
+}
+
+#once 
+{ 
+    clear: left;
+}                                                   
+
